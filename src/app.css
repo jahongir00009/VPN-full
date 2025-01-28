@@ -33,7 +33,7 @@ nav a {
 
 nav a:hover {
   color: #743deb;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .nav-flex {
@@ -125,7 +125,7 @@ header {
 .birinchi-section {
   padding: var(--global-padding);
   background-image: url("/public/year.png");
-  background-position: calc(100% + 150px) center;
+  background-position: calc(100% + 50px);
   background-repeat: no-repeat;
   background-size: 50%;
   display: flex;
@@ -152,6 +152,11 @@ header {
   align-items: center;
 }
 
+.setkanavbar{
+  position: absolute;
+  margin-top: 800px;
+  margin-left: -850px;
+}
 .solid-rounded button {
   background-color: #723cea;
   color: var(--color);
@@ -270,25 +275,27 @@ header {
   width: 20px;
 }
 
+.reklama {
+  overflow: hidden;
+}
+
 .price {
   padding: var(--global-padding);
   margin-top: 100px;
+  justify-content: center;
 }
 
 .price-card {
   width: 400px;
   height: 258px;
   border-radius: 20px;
-  background-color: #0d132e;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
-}
-
-.price-card:hover {
-  border: 1px solid var(--text-color);
+  background: #ffffff0b;
+  backdrop-filter: blur(100px);
 }
 
 .price-card h1 {
@@ -383,12 +390,23 @@ header {
   background: url(/public/katak.png);
   background-repeat: no-repeat;
 }
+.coco-cola {
+  border: solid 1px #723cea;
+  background-color: #723cea;
+  border-radius: 50%;
+  width: 359px;
+  height: 359px;
+  position: absolute;
+  margin-left: 650px;
+  margin-top: -480px;
+  z-index: -1;
+  filter: blur(200px);
+}
 footer {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px 40px;
+  margin-right: 50px;
 }
 
 .footer-content {
@@ -396,7 +414,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 1200px;
+  gap: 290px;
 }
 
 .footer-section img {
@@ -419,12 +437,13 @@ footer {
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  background-color: #000724;
 }
 
 .up-button svg {
   width: 24px;
   height: 24px;
-  fill: #fff;
+  color: #fff;
 }
 
 .up-button span {
@@ -432,14 +451,9 @@ footer {
   font-size: 12px;
   color: #ffffff;
 }
-
-hr {
-  width: 100%;
-  border: none;
-  height: 1px;
-  background-color: #000723; /* Light line */
-  position: absolute;
-  margin-top: 290px;
+.up-button:hover {
+  background-color: #09c4e9;
+  color: #000723;
 }
 
 .footer-bottom {
@@ -453,4 +467,213 @@ hr {
   position: absolute;
   margin-top: 350px;
   line-height: 24px;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.svg-mask {
+  width: 610px;
+  height: 160px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(15px);
+  margin-left: 630px;
+  margin-top: 300px;
+  position: absolute;
+}
+
+.birinchi-section .img-div {
+  margin-bottom: 78px;
+  position: absolute;
+  margin-top: 296px;
+  margin-left: -290px;
+}
+
+.num1 {
+  color: #09c4e9;
+  border: 1px solid #09c4e9;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 160px;
+  top: 10px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(15px);
+  transform: rotate(20deg);
+}
+
+.num2 {
+  color: #09c4e9;
+  border: 2px solid #09c4e9;
+  width: 45px;
+  height: 45px;
+  font-size: 22px;
+  position: absolute;
+  right: 180px;
+  bottom: 134px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(px);
+}
+
+.num3 {
+  color: #09c4e9;
+  border: 3px solid #09c4e9;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  right: 218px;
+  bottom: 145px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(20px);
+  transform: rotate(-10deg);
+  font-size: 36px;
+}
+
+.num4 {
+  color: #09c4e9;
+  border: 4px solid #09c4e9;
+  width: 110px;
+  height: 110px;
+  position: absolute;
+  right: 285px;
+  bottom: 130px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(px);
+  transform: rotate(-20deg);
+  font-size: 60px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Foter-end {
+  display: flex;
+  margin-left: 80px;
+  margin-top: -100px;
+}
+
+.footer-content {
+  background: url(/public/fotersetka.png);
+  background-repeat: no-repeat;
+  background-position: 250px;
+}
+.setka {
+  border: solid 1px #723cea;
+  background-color: #723cea;
+  border-radius: 50%;
+  width: 359px;
+  height: 359px;
+  position: absolute;
+  margin-left: 600px;
+  margin-top: -480px;
+  z-index: -1;
+  filter: blur(400px);
+}
+.millaya {
+  border: solid 1px#09C4E9;
+  background-color: #09c4e9;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  margin-left: 1315px;
+  margin-top: -350px;
+  z-index: -1;
+  filter: blur(50px);
+}
+
+.chegirma {
+  border: solid 2px #09c4e9;
+  width: 90px;
+  padding: 10px;
+  border-radius: 10px;
+  position: absolute;
+  margin-left: 720px;
+  margin-top: -370px;
+  text-align: center;
+  flex-shrink: 0;
+  transform: rotate(-20deg);
+}
+.chegirma span {
+  font-size: 22px;
+  color: #09c4e9;
+}
+
+.chegirma2 {
+  border: solid 2px #09c4e9;
+  background-color: #09c4e9;
+  width: 90px;
+  padding: 10px;
+  border-radius: 10px;
+  position: absolute;
+  margin-left: 1130px;
+  margin-top: -370px;
+  text-align: center;
+  flex-shrink: 0;
+  transform: rotate(-20deg);
+}
+.chegirma2 span {
+  font-size: 22px;
+  color: #0e2643;
+}
+
+.navbarrang {
+  border: solid 1px#723CEA;
+  background-color: #723CEA;
+  border-radius: 50%;
+  width: 239.351px;
+  height: 95px;
+  position: absolute;
+  margin-left: 100px;
+  margin-top: 350px;
+  z-index: -1;
+  filter: blur(61.68830871582031px);
+}
+.setgabg {
+  border: solid 1px#09C4E9;
+  background-color: #09C4E9;
+  border-radius: 50%;
+  width: 770px;
+  height: 770px;
+  position: absolute;
+  margin-left: -800px;
+  margin-top: -200px;
+  z-index: -1;
+  filter: blur(200px);
+}
+
+.two-section{
+  background: url(/public/headersetka.png);
+  background-repeat: no-repeat;
+  background-position: 700px;
 }

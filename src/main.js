@@ -5,13 +5,13 @@ document.addEventListener("DOMContentLoaded", function () {
     adFlex.innerHTML += adItems; 
   
     adFlex.style.whiteSpace = "nowrap"; 
-    adFlex.style.overflow = "hidden"; 
+     
   
     let scrollAmount = 0;
     function scrollAd() {
-      scrollAmount -= 2;
-      if (scrollAmount <= -adFlex.scrollWidth / 2) {
-        scrollAmount = 0;
+      scrollAmount -= 1;
+      if (scrollAmount <= -adFlex.scrollWidth / 1) {
+        scrollAmount = 1;
       }
       adFlex.style.transform = `translateX(${scrollAmount}px)`;
       requestAnimationFrame(scrollAd);
